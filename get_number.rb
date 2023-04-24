@@ -1,5 +1,6 @@
 # Jogo "Adivinha meu numero"
 #Escrito por: Felipe Espíndola
+#TESTE GIT
 puts  "-" * 30
 puts "Bem Vindo ao 'Get My Number!'"
 puts  "-" * 30
