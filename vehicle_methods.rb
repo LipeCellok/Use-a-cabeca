@@ -8,11 +8,16 @@ def sound_horn
     puts "Beep Beep"
 end
 
-def use_headlights (brightness)
-    puts "Turning on #{brightness}"
+def use_headlights (brightness = "low-beam")
+    puts "Turning on #{brightness} headlights"
     puts "Watch out for deer!"
 end
 
-accelerate
-sound_horn
-use_headlights("high-beam")
+def mileage(miles_driven, gas_used)
+    return miles_driven / gas_used
+end
+
+trip_mileage = mileage(400, 12)
+puts "You got #{trip_mileage} MPG on this trip"
+
+lifetime_mileage
