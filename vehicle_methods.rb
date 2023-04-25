@@ -1,5 +1,5 @@
 def accelerate
-    puts " Stepping on the gas"
+    puts "Stepping on the gas"
     puts "spedding up"
 end
 
@@ -14,3 +14,5 @@ def use_headlights (brightness)
 end
 
 accelerate
+sound_horn
+use_headlights("high-beam")
