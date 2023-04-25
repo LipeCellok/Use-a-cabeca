@@ -1,0 +1,16 @@
+def accelerate
+    puts " Stepping on the gas"
+    puts "spedding up"
+end
+
+def sound_horn
+    puts "Pressing the horn button"
+    puts "Beep Beep"
+end
+
+def use_headlights (brightness)
+    puts "Turning on #{brightness}"
+    puts "Watch out for deer!"
+end
+
+accelerate
