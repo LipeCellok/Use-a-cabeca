@@ -1,38 +1,47 @@
 class Dog
+  def make_up_name
+    @name = "Sandy"
+  end
+
   def talk
-    puts "Bark!"
+    puts "#{@name} Says Bark!"
   end
 
   def move(destination)
-    puts "Running to the #{destination}."
+    puts "#{@name} runs to the #{destination}."
+  end
+
+  def make_up_age
+    @age = 5
+  end
+
+  def report_age
+    puts "#{@name} is #{@age} years old."
   end
 end
 
 class Bird
-  def talk
-    puts "Chirp Chirp!"
+  def talk(name)
+    puts "#{name} says Chirp Chirp!"
   end
 
-  def move(destination)
-    puts "Flying to the #{destination}"
+  def move(name, destination)
+    puts "#{name} flies to the #{destination}"
   end
 end
 
 class Cat
-  def talk
-    puts "Meow!"
+  def talk(name)
+    puts "#{name} Says Meow!"
   end
 
-  def move (destination)
-    puts "Running to the #{destination}"
+  def move (name, destination)
+    puts "#{name} runs to the #{destination}"
   end
 end
 
-bird = Bird.new
 dog = Dog.new
-cat = Cat.new
-
-bird.move ("tree")
-dog.talk
-bird.talk
-cat.move("house")
+dog.make_up_name
+dog.move("yard")
+dog.make_up_age
+dog.report_age
