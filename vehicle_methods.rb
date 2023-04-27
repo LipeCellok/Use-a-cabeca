@@ -1,5 +1,5 @@
 def accelerate
-    puts "Stepping on the gas"
+    puts "Stepping on th e gas"
     puts "spedding up"
 end
 
