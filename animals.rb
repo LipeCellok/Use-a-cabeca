@@ -1,7 +1,5 @@
 class Dog
-  def make_up_name
-    @name = "Sandy"
-  end
+  attr_accessor :name, :age
 
   def talk
     puts "#{@name} Says Bark!"
@@ -9,10 +7,6 @@ class Dog
 
   def move(destination)
     puts "#{@name} runs to the #{destination}."
-  end
-
-  def make_up_age
-    @age = 5
   end
 
   def report_age
@@ -40,8 +34,13 @@ class Cat
   end
 end
 
-dog = Dog.new
-dog.make_up_name
-dog.move("yard")
-dog.make_up_age
-dog.report_age
+fido = Dog.new
+fido.name = "Fido"
+fido.age = 2
+floquinho = Dog.new
+floquinho.name = "Floquinho"
+floquinho.age = 3
+
+fido.report_age
+floquinho.report_age
+
