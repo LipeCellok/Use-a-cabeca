@@ -13,3 +13,4 @@ blender = Blender.new
 blender.close_lid
 blender.blend ("high")
 
+TESTE 08/05
